@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_toolbar"
+    style="@style/ChatUITheme.ChatToolbar"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/operator_avatar"
+            style="@style/ChatUITheme.OperatorAvatar"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/operator_name"
+                style="@style/ChatUITheme.OperatorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/nchat_toolbar_title" />
+
+            <TextView
+                android:id="@+id/operator_is_typing"
+                style="@style/ChatUITheme.ChatTypingStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                tools:text="Оператор печатает..." />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/video_call_button"
+            style="@style/ChatUITheme.VideoCallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/rating_button"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:srcCompat="@drawable/nchat_ic_video_call_black_24dp"
+            tools:tint="@color/nchat_text_grey"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/rating_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/send_chat_history"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/nchat_rating_bar_item_normal"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/star_off"
+            tools:tint="@color/nchat_text_grey"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/send_chat_history"
+            style="?attr/nchat_save_chat_theme_icon_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>

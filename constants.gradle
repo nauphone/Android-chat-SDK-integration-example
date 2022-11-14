@@ -1,0 +1,9 @@
+ext {
+    constants = [
+            //Логин и пароль от мавен репозитория, которые предоставляются компанией Naumen
+            naumenLogin   : "",
+            naumenPassword: ""
+    ]
+}
+
+

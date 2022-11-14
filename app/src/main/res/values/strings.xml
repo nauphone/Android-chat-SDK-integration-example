@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidChatSdkExample</string>
+
+    <string name="nchat_api_host"></string>
+    <string name="nchat_ws_host"></string>
+    <string name="nchat_showcase_id"></string>
+</resources>

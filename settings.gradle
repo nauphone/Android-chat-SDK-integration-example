@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+apply from: './constants.gradle'
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven {
+            url "https://$constants.naumenLogin:$constants.naumenPassword@nauphone.naumen.ru/repo"
+            credentials {
+                username "$constants.naumenLogin"
+                password "$constants.naumenPassword"
+            }
+        }
+
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "AndroidSDKIntegrationExample"
+include ':app'
