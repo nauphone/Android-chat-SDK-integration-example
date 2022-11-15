@@ -11,3 +11,6 @@
 - В качестве примера тулбар [custom_chat_toolbar.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/custom_chat_toolbar.xml) скопирован из самого SDK и встроен как кастомный
 - Стоит обратить внимание на [вёрстку-пример](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/activity_main.xml) встраивания через фрагмент 
 - Стоит обратить внимание на настройку [AndroidManifest.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/AndroidManifest.xml)
+
+## Важно
+- В данном примере сессия пользователя сбрасывается при перезапуске приложения. Это ожидаемое поведение, т.к. реализация хранения crmId должна осуществляться на стороне приложения, в которое происходит интеграция SDK. Сменить поведение в примере можно подставив константу в [MainActivity.kt](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/java/ru/naumen/android_chat_sdk_example/MainActivity.kt) в методе getAuthData()
