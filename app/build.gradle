@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'ru.naumen.android_chat_sdk_example'
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "ru.naumen.android_chat_sdk_example"
         minSdk 21
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
