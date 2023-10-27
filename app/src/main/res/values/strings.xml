@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AndroidChatSdkExample</string>
-
     <string name="nchat_api_host"></string>
     <string name="nchat_ws_host"></string>
     <string name="nchat_showcase_id"></string>
+    <string name="params_empty_error_message">Для запуска необходимо выставить параметры nchat_api_host, nchat_ws_host и nchat_showcase_id в файле strings.xml. Подробнее про эти параметры можно узнать в README проекта.</string>
 </resources>

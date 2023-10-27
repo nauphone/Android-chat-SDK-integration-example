@@ -50,11 +50,15 @@ class MainActivity : AppCompatActivity(R.layout.activity_main), IChatHolder {
     }
 
     private fun getConfig(): Config {
-        return Config(
-            resources.getString(R.string.nchat_api_host),
-            resources.getString(R.string.nchat_ws_host),
-            resources.getString(R.string.nchat_showcase_id).toLong()
-        )
+        val apiHost = resources.getString(R.string.nchat_api_host)
+        val wsHost = resources.getString(R.string.nchat_ws_host)
+        val showcaseId = resources.getString(R.string.nchat_showcase_id).toLongOrNull()
+
+        if (apiHost.isEmpty() || wsHost.isEmpty() || showcaseId == null) {
+            throw UnsupportedOperationException(resources.getString(R.string.params_empty_error_message))
+        }
+
+        return Config(apiHost, wsHost, showcaseId)
     }
 
     private fun getAuthData(): AuthData {
