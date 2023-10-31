@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Тема приложения по умолчанию-->
+    <style name="ApplicationTheme" parent="Theme.AppCompat.DayNight.NoActionBar"/>
+
+    <!--Тема для кастомизации ChatSDK-->
+    <style name="ChatSDKTheme" parent="ChatUITheme.NoActionBar">
+        <item name="nchat_input_view_send_colorable_image_view_style">@style/CustomizedSendButtonStyle</item>
+    </style>
+
+    <!--Пример кастомизации стиля кнопки отправки сообщения-->
+    <style name="CustomizedSendButtonStyle" parent="ChatInputView.SendButton">
+        <item name="cib_color_filter">#25B2C0</item>
+        <item name="cib_color_filter_pressed">#1A8A95</item>
+    </style>
+
+</resources>

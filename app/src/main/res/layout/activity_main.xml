@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical">
 
-    <include layout="@layout/custom_chat_toolbar" />
+    <Button
+        android:id="@+id/activity_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_drawable"
+        android:paddingHorizontal="16dp"
+        android:text="Старт через ChatActivity"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
 
-    <FrameLayout
-        android:id="@+id/fragment_holder"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <Button
+        android:id="@+id/fragment_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_button_drawable"
+        android:paddingHorizontal="16dp"
+        android:text="Старт через ChatFragment"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
 </LinearLayout>
