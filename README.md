@@ -13,7 +13,7 @@
 - В файле [app/build.gradle](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/build.gradle) можно выставить версию SDK
 - В файле [styles.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/values/styles.xml) приведён пример кастомизации SDK
 - В качестве примера тулбар [custom_chat_toolbar.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/custom_chat_toolbar.xml) скопирован из самого SDK и встроен как кастомный
-- Стоит обратить внимание на [пример вёрстки](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/fragment_integration_activity.xml)) интеграции SDK через фрагмент 
+- Стоит обратить внимание на [пример вёрстки](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/fragment_integration_activity.xml) интеграции SDK через фрагмент 
 - Стоит обратить внимание на настройку [AndroidManifest.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/AndroidManifest.xml)
 - Историю изменений можно увидеть в файле CHANGELOG.md, который прикладывается в пакет ChatSDK ru.naumen:chat-ui начиная с версии 23.9.0
 
