@@ -1,5 +1,6 @@
 ext {
     constants = [
+            projectVersion: "27.2.0",
             //Логин и пароль от мавен репозитория, которые предоставляются компанией Naumen
             naumenLogin   : "",
             naumenPassword: ""

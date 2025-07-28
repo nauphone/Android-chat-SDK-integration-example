@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         tools:targetApi="33">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
             android:theme="@style/ApplicationTheme">
             <intent-filter>
@@ -26,10 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".StartSDKWithFragmentActivity"
-            android:theme="@style/ApplicationTheme"/>
 
         <activity
             android:name="ru.naumen.chat.chatsdk.activity.ChatActivity"
