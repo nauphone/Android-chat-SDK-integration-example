@@ -10,9 +10,10 @@
 
 ## На что обратить внимание при интеграции
 - В файле [settings.gradle](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/settings.gradle) можно увидеть настройку репозитория, из которого будут приходить сборки
-- В файле [app/build.gradle](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/build.gradle) можно выставить версию SDK
+- В файле [constants.gradle](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/constants.gradle) можно выставить версию SDK
 - В файле [styles.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/values/styles.xml) приведён пример кастомизации SDK
-- В качестве примера тулбар [custom_chat_toolbar.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/custom_chat_toolbar.xml) скопирован из самого SDK и встроен как кастомный
+- В качестве примера тулбар [custom_chat_toolbar.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/custom_chat_toolbar.xml) скопирован из самого SDK и встроен как кастомный 
+- В качестве примера, в проекте реализован переход на экран чата через BottomNavigation
 - Стоит обратить внимание на [пример вёрстки](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/res/layout/fragment_integration_activity.xml) интеграции SDK через фрагмент 
 - Стоит обратить внимание на настройку [AndroidManifest.xml](https://github.com/nauphone/Android-chat-SDK-integration-example/blob/master/app/src/main/AndroidManifest.xml)
 - Историю изменений можно увидеть в файле CHANGELOG.md, который прикладывается в пакет ChatSDK ru.naumen:chat-ui начиная с версии 23.9.0
